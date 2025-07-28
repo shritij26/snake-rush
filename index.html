@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🐍 Snake Game</h1>
+  <div id="score-display">Score: 0</div>
+  <div class="game-container">
+    <div id="game-board">
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="bottom-controls">
+      <button id="start-button">Start Game</button>
+
+      <div class="arrow-pad">
+        <button class="arrow up">W</button>
+        <div>
+          <button class="arrow left">A</button>
+          <button class="arrow down">S</button>
+          <button class="arrow right">D</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="game-over" class="hidden">
+    <h2>💀 Game Over</h2>
+    <p id="final-score">Score: 0</p>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
