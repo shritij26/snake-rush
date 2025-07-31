@@ -41,7 +41,7 @@ function startGame() {
   updateScore();
   placeFood();
   clearInterval(interval);
-  interval = setInterval(update, 20);
+  interval = setInterval(update, 200);
   gameOverDisplay.classList.add("hidden");
   render();
 }
